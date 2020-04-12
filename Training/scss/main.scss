@@ -1,0 +1,42 @@
+%article-w-h{
+    color: white;
+}
+
+main{
+    position: absolute;
+    top: 0;
+    left: 19%;
+    width: 81%;
+    height: $main-height;
+    background-color: cornflowerblue;
+    header{
+        height: 10%;
+        background-color: darkslategray;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        h2{
+            text-align: center;
+            color: white;
+        }
+    }
+
+    .articles{
+        height: 90%;
+        background-color: black;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        article{
+            @extend %article-w-h;
+            padding: 0 25px;
+            h3{
+                text-align: center;
+                color: red;
+            }
+            p{
+                text-align: justify;
+            }
+        }
+    }
+}

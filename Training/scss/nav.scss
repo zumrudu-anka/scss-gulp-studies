@@ -1,0 +1,65 @@
+nav{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: $nav-width;
+    height: 100%;
+    padding: 25px 0;
+    background-color: $secondary-color;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    ul{
+        width: 100%;
+        li{
+            list-style: none;
+            width: 100%;
+            background-color: $primary-color;
+            text-align: center;
+            padding: 5px 0;
+            a{
+                color: $secondary-color;
+                text-decoration: none;
+                &:hover{
+                    color : white;
+                }
+            }
+        }
+        &:nth-child(2){
+            li{
+                &:last-child(){
+                    margin-bottom: 25px;
+                }
+            }
+
+            $sizes: 5, 10, 15, 20, 25, 30, 35, 40; // array
+            @each $size in $sizes{
+                .fontSize-#{$size}{ // use variable like string
+                    color: rgb(($size*$size) % 255, ($size*$size) % 255, ($size*$size) % 255);
+                }
+            }
+
+            @for $value from 1 through 8{ // If you use from x to y. y is not in this loop. But now(through) y in loop.
+                $value : $value * 5;
+                .fontSize-#{$value}{
+                    background-color: rgb(($value*$value + $value + $value) % 255, ($value*$value + $value + $value) % 255, ($value*$value + $value + $value) % 255);
+                }
+            }
+
+            @function Process($i){
+                $value : $i * 5;
+                @return #{$value / 5 * 2}px;
+            }
+
+            $i : 8;
+            @while $i > 0{
+                .fontSize-#{$i * 5}{
+                    font-size: Process($i);
+                }
+                $i : $i - 1;
+            }
+        }
+    }
+    
+}

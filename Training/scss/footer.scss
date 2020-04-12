@@ -1,0 +1,64 @@
+
+@mixin boxRadius($value){
+    border-top-left-radius: $value;
+    border-bottom-right-radius: $value;
+}
+
+@mixin boxShadow($h-offset, $v-offset, $blur, $spread, $color){
+    box-shadow: $h-offset $v-offset $blur $spread $color;
+}
+
+@mixin imageShadow($isActive : false){
+    @if $isActive{
+        box-shadow: 0 0 5px 5px deepskyblue;
+    }
+    @else{
+        box-shadow: 0 0 5px 5px black;
+    }
+}
+
+footer{
+    width: 81%;
+    position: absolute;
+    top: $main-height;
+    left: $nav-width;
+    .cards{
+        height: 100vh - $main-height;
+        color: white;
+        background-color: darkslategray;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        .card{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            border: 1px solid white;
+            height: 70%;
+            padding: 0 25px;
+            @include boxRadius(25%);
+            @include boxShadow(0, 0, 15px, 1px, white);
+            &:hover{
+                .image{
+                    @include imageShadow(true);
+                }
+            }
+            .image{
+                width: 65%;
+                height: 35%;
+                background: linear-gradient(45deg, deepskyblue 25%, purple 65%, deepskyblue 100%);
+                border-radius: 25%;
+                @include imageShadow();
+            }
+            h4{
+                padding: 5px 0;
+                color: black;
+            }
+            p{
+                text-align: justify;
+                text-shadow: 0 0 5px deepskyblue;
+            }
+        }
+    }
+}

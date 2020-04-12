@@ -1,0 +1,15 @@
+#main{
+    .wrapper{
+        ul{
+            margin: 0;
+            padding: 10px;
+            list-style: none;
+            li{
+                @include grid(5, 3%);
+                img{
+                    width: 100%;
+                }
+            }
+        }
+    }
+}

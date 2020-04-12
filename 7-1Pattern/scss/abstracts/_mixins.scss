@@ -1,0 +1,9 @@
+@mixin grid($sutun, $marg){
+    float: left;
+    width: ((100% - (($sutun - 1) * $marg)) / $sutun);
+    margin-right: $marg;
+    margin-bottom: $marg;
+    &:nth-child(#{$sutun}n){
+        margin-right: 0;
+    }
+}

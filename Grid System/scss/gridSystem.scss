@@ -1,0 +1,25 @@
+@mixin grid($sutun, $marg){
+    float: left;
+    width: ((100% - (($sutun - 1) * $marg)) / $sutun);
+    margin-right: $marg;
+    margin-bottom: $marg;
+    &:nth-child(#{$sutun}n){
+        margin-right: 0;
+    }
+}
+
+#main{
+    .wrapper{
+        ul{
+            margin: 0;
+            padding: 10px;
+            list-style: none;
+            li{
+                @include grid(2, 3%);
+                img{
+                    width: 100%;
+                }
+            }
+        }
+    }
+}

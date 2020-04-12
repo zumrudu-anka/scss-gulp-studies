@@ -1,0 +1,43 @@
+$numbers : 1, 2, 3, 4, 5;
+
+@each $number in $numbers{
+    @if $number == 3{
+        .text-#{$number}{
+            color: red;
+        }
+    }
+    @else{
+        .text-#{$number}{
+            color: black;
+        }
+    }
+}
+
+$sentences : "asd", "qwe", "zxc";
+
+@each $sentence in $sentences{
+    .#{$sentence}{
+        color: blue;
+    }
+}
+
+@for $value from 1 to 9{
+    .num-#{$value}{
+        content: '#{$value}';
+    }
+}
+
+@for $value from 0 through 10{
+    .throughFor-#{$value}{
+        content : '#{$value} Through(With loop end flag)';
+    }
+}
+
+
+$i : 1;
+@while $i < 16{
+    .while-#{$i}{
+        content : '#{$i * 15} while content';
+    }
+    $i : $i + 1;
+}

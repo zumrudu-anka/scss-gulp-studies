@@ -1,0 +1,62 @@
+// quote - cift tirnak arasina alir
+.text{
+    font-family: quote(consolas);
+}
+
+// unquote - cift tirnagi kaldirir
+.text2{
+    font-size: unquote("32px");
+    #{unquote("display")} : none;
+}
+
+// str-index
+.text3{
+    font-size: str-index("Merhaba", "aga"); // if substring(second) not in string(first) return NaN;
+    margin: str-index("Merhaba", "Mer"); // this function is case sensitive..
+    padding: str-index("Merhaba aga", "aga"); // begin index is 1.
+    display: block;
+}
+
+// str-insert
+.text4{
+    font-family: str-insert("con", "solas", 4);
+    &::before{
+        content: str-insert("Mhaba", "er", 2); // merhaba
+    }
+    &::after{
+        content: str-insert("cakal", "Hos", -6); // Hoscakal
+    }
+}
+
+// str-length
+.text5{
+    font-size: #{str-length("Merhaba")}px;
+}
+
+// str-slice
+.text6{
+    &::before{
+        content: str-slice("agaHosgeldin", 4);
+    }
+    &::after{
+        content: str-slice("aga Hosgeldin aga", 5, -5); // same
+     // content: str-slice("aga Hosgeldin aga", 5, 13); // same
+    }
+}
+
+// to-upper-case
+.text7{
+    &::before{
+        content: to-upper-case("merhaba");
+    }
+    &::after{
+        content: to-lower-case("MERHABA");
+    }
+}
+
+// unique-id
+.text8{
+    &::before{
+        content: #{unique-id()};
+    }
+}

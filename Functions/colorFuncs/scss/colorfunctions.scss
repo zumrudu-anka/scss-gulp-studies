@@ -1,0 +1,84 @@
+// grayscale
+.text{
+    color: grayscale(#b60f0f);
+}
+
+// complement
+.text2{
+    color: complement(#108585);
+}
+
+// invert
+.text3{
+    color: invert(#108585);
+}
+
+// red - green - blue // Returns the red, green of blue value of color as a number between 0 and 255.
+.text4{
+    color: red(blue);
+    background-color: red(red);
+    border: 1px solid red(#108585);
+    &::before{
+        color: blue(#b60f0f);
+    }
+    &::after{
+        color: green(#b60f0f);
+    }
+}
+
+// hue - saturation - lightness
+// Hue - Returns the hue of color as a number between 0deg and 255deg.
+// Saturation - Returns the HSL saturation of color as a number between 0% and 100%.
+// Lightness - Returns the HSL lightness of color as a number between 0% and 100%.
+.text5{
+    color: hsl(hue(blue), saturation(#b60f0f), lightness(#108585));
+}
+
+// opacity & alpha
+// Returns the alpha channel of color as a number between 0 and 1.
+.text6{
+    color: rgba(100, 100, 100, alpha(#108585));
+    background-color: rgba(100, 100, 100, opacity(#108585));
+}
+
+// mix
+.text7{
+    color: mix(red, blue, 50%);
+    background-color: mix(#b60f0f, #108585, 25%);
+}
+
+// adjust-hue
+.text8{
+    color: adjust-hue(red, 180deg);
+}
+
+// change-color
+.text9{
+    color: change-color( #7a0395, $hue: 120, $saturation: 25%, $lightness: 15%, $alpha: 0.7);
+    background-color: change-color(#7a0395, $blue: 125, $alpha: 0.3);
+    border: 1px solid change-color(#7a0395, $lightness: 25%);
+}
+
+// lighten - darken
+.text10{
+    color: lighten(red, 25%);
+    background-color: darken(red, 25%);
+}
+
+// saturate - desaturate
+.text11{
+    color: saturate(gray, 25%);
+    background-color: desaturate(red, 25%);
+}
+
+// opacify - fade-in -> Same
+.text12{
+    color: opacify(rgba(175,12, 134, 0.3), 0.3);
+    background-color: fade-in(rgba(175,12, 134, 0.3), 0.3);
+}
+
+// transparentize - fade-out -> Same
+.text13{
+    color: transparentize(rgba(175,12, 134, 1), 0.3);
+    background-color: fade-out(rgba(175,12, 134, 1), 0.3);
+}

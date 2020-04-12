@@ -1,0 +1,102 @@
+
+// abs
+.text{
+    font-size : abs(-32px);
+}
+
+// ceil
+.text2{
+    border : ceil(1.2px) solid black;
+}
+
+// floor
+.text3{
+    border : floor(3.2px) solid black;
+    border-radius: floor(3.9px);
+}
+
+// round
+.text4{
+    border : round(3.4px) solid black;
+    border-radius: round(3.9px);
+}
+
+// percentage
+.text5{
+    border-radius: percentage(0.2);
+}
+
+//min - max
+$arrayForMinMax  : 5, 15, 25, 1, 48, 3;
+$arrayForMinMax2 : 2px, 15px, 3px, 16px, 0px;
+//max
+.text6{
+    border-radius: max(5px, 20px);
+    border: max($arrayForMinMax...) solid red;
+    font-size: max($arrayForMinMax2...);
+}
+
+//min
+.text7{
+    border-radius: min(5px, 15px);
+    border: min($arrayForMinMax...) solid black;
+    font-size: min($arrayForMinMax2...);
+}
+
+// unit - unitless // Birimli veya birimsiz
+.text8{
+
+    @if unit(15px){
+        padding: 15px;
+    }
+    @else{
+        padding: 10px;
+    }
+
+    @if unitless(10){
+        border-radius: 15px;
+    }
+    @else{
+        border-radius: 10px;
+    }
+
+    @if unit(10){
+        color: red;
+    }
+    @else{
+        color: blue;
+    }
+
+    @if unitless(10px){
+        background-color: blue;
+    }
+    @else{
+        background-color: red;
+    }
+
+}
+
+// comparable
+.text9{
+    @if comparable(2px, 1em){
+        padding: 15px;
+    }
+    @else{
+        padding: 5px;
+    }
+
+    @if comparable(1cm, 5mm){
+        color: black;
+    }
+    @else{
+        color: blue;
+    }
+}
+
+// random - create a decimal value between 0 and 1.
+.text10{
+    size: random();
+    margin: random(100);
+    border-radius: random(50) + px;
+    border : #{random(25)}px solid black;
+}

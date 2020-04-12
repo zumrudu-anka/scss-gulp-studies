@@ -1,0 +1,69 @@
+.text {
+  color: #636363;
+}
+
+.text2 {
+  color: #851010;
+}
+
+.text3 {
+  color: #ef7a7a;
+}
+
+.text4 {
+  color: 0;
+  background-color: 255;
+  border: 1px solid 16;
+}
+
+.text4::before {
+  color: 15;
+}
+
+.text4::after {
+  color: 15;
+}
+
+.text5 {
+  color: #0b0b8a;
+}
+
+.text6 {
+  color: #646464;
+  background-color: #646464;
+}
+
+.text7 {
+  color: purple;
+  background-color: #3a6868;
+}
+
+.text8 {
+  color: cyan;
+}
+
+.text9 {
+  color: rgba(29, 48, 29, 0.7);
+  background-color: rgba(122, 3, 125, 0.3);
+  border: 1px solid #66037d;
+}
+
+.text10 {
+  color: #ff8080;
+  background-color: maroon;
+}
+
+.text11 {
+  color: #a06060;
+  background-color: #df2020;
+}
+
+.text12 {
+  color: rgba(175, 12, 134, 0.6);
+  background-color: rgba(175, 12, 134, 0.6);
+}
+
+.text13 {
+  color: rgba(175, 12, 134, 0.7);
+  background-color: rgba(175, 12, 134, 0.7);
+}

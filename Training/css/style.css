@@ -1,0 +1,285 @@
+main .articles article {
+  color: white;
+}
+
+main {
+  position: absolute;
+  top: 0;
+  left: 19%;
+  width: 81%;
+  height: 75vh;
+  background-color: cornflowerblue;
+}
+
+main header {
+  height: 10%;
+  background-color: darkslategray;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+main header h2 {
+  text-align: center;
+  color: white;
+}
+
+main .articles {
+  height: 90%;
+  background-color: black;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main .articles article {
+  padding: 0 25px;
+}
+
+main .articles article h3 {
+  text-align: center;
+  color: red;
+}
+
+main .articles article p {
+  text-align: justify;
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 19%;
+  height: 100%;
+  padding: 25px 0;
+  background-color: #d88c00;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+nav ul {
+  width: 100%;
+}
+
+nav ul li {
+  list-style: none;
+  width: 100%;
+  background-color: darkslategray;
+  text-align: center;
+  padding: 5px 0;
+}
+
+nav ul li a {
+  color: #d88c00;
+  text-decoration: none;
+}
+
+nav ul li a:hover {
+  color: white;
+}
+
+nav ul:nth-child(2) li:last-child {
+  margin-bottom: 25px;
+}
+
+nav ul:nth-child(2) .fontSize-5 {
+  color: #191919;
+}
+
+nav ul:nth-child(2) .fontSize-10 {
+  color: #646464;
+}
+
+nav ul:nth-child(2) .fontSize-15 {
+  color: #e1e1e1;
+}
+
+nav ul:nth-child(2) .fontSize-20 {
+  color: #919191;
+}
+
+nav ul:nth-child(2) .fontSize-25 {
+  color: #737373;
+}
+
+nav ul:nth-child(2) .fontSize-30 {
+  color: #878787;
+}
+
+nav ul:nth-child(2) .fontSize-35 {
+  color: #cdcdcd;
+}
+
+nav ul:nth-child(2) .fontSize-40 {
+  color: #464646;
+}
+
+nav ul:nth-child(2) .fontSize-5 {
+  background-color: #232323;
+}
+
+nav ul:nth-child(2) .fontSize-10 {
+  background-color: #787878;
+}
+
+nav ul:nth-child(2) .fontSize-15 {
+  background-color: black;
+}
+
+nav ul:nth-child(2) .fontSize-20 {
+  background-color: #b9b9b9;
+}
+
+nav ul:nth-child(2) .fontSize-25 {
+  background-color: #a5a5a5;
+}
+
+nav ul:nth-child(2) .fontSize-30 {
+  background-color: #c3c3c3;
+}
+
+nav ul:nth-child(2) .fontSize-35 {
+  background-color: #141414;
+}
+
+nav ul:nth-child(2) .fontSize-40 {
+  background-color: #969696;
+}
+
+nav ul:nth-child(2) .fontSize-40 {
+  font-size: 16px;
+}
+
+nav ul:nth-child(2) .fontSize-35 {
+  font-size: 14px;
+}
+
+nav ul:nth-child(2) .fontSize-30 {
+  font-size: 12px;
+}
+
+nav ul:nth-child(2) .fontSize-25 {
+  font-size: 10px;
+}
+
+nav ul:nth-child(2) .fontSize-20 {
+  font-size: 8px;
+}
+
+nav ul:nth-child(2) .fontSize-15 {
+  font-size: 6px;
+}
+
+nav ul:nth-child(2) .fontSize-10 {
+  font-size: 4px;
+}
+
+nav ul:nth-child(2) .fontSize-5 {
+  font-size: 2px;
+}
+
+footer {
+  width: 81%;
+  position: absolute;
+  top: 75vh;
+  left: 19%;
+}
+
+footer .cards {
+  height: 25vh;
+  color: white;
+  background-color: darkslategray;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+footer .cards .card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  border: 1px solid white;
+  height: 70%;
+  padding: 0 25px;
+  border-top-left-radius: 25%;
+  border-bottom-right-radius: 25%;
+  -webkit-box-shadow: 0 0 15px 1px white;
+          box-shadow: 0 0 15px 1px white;
+}
+
+footer .cards .card:hover .image {
+  -webkit-box-shadow: 0 0 5px 5px deepskyblue;
+          box-shadow: 0 0 5px 5px deepskyblue;
+}
+
+footer .cards .card .image {
+  width: 65%;
+  height: 35%;
+  background: linear-gradient(45deg, deepskyblue 25%, purple 65%, deepskyblue 100%);
+  border-radius: 25%;
+  -webkit-box-shadow: 0 0 5px 5px black;
+          box-shadow: 0 0 5px 5px black;
+}
+
+footer .cards .card h4 {
+  padding: 5px 0;
+  color: black;
+}
+
+footer .cards .card p {
+  text-align: justify;
+  text-shadow: 0 0 5px deepskyblue;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Gotham, "Hevletica Neue", Helvetica, Arial, "sans-serif";
+  font-size: 15px;
+  font-style: normal;
+  font-weight: bold;
+}
+
+.for-inherit, body {
+  background-color: darkslategray;
+  height: 100vh;
+}

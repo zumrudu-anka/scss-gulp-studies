@@ -1,0 +1,50 @@
+.text {
+  font-family: "consolas";
+}
+
+.text2 {
+  font-size: 32px;
+  display: none;
+}
+
+.text3 {
+  margin: 1;
+  padding: 9;
+  display: block;
+}
+
+.text4 {
+  font-family: "consolas";
+}
+
+.text4::before {
+  content: "Merhaba";
+}
+
+.text4::after {
+  content: "Hoscakal";
+}
+
+.text5 {
+  font-size: 7px;
+}
+
+.text6::before {
+  content: "Hosgeldin";
+}
+
+.text6::after {
+  content: "Hosgeldin";
+}
+
+.text7::before {
+  content: "MERHABA";
+}
+
+.text7::after {
+  content: "merhaba";
+}
+
+.text8::before {
+  content: u97bcad1c;
+}

@@ -1,0 +1,11 @@
+$primary-color : darkslategray;
+$secondary-color : rgb(216, 140, 0);
+$main-height : 75vh;
+$nav-width : 19%;
+
+.text{
+    color: $primary-color;
+    background-color: $secondary-color;
+    height: $main-height;
+    width: $nav-width;
+}

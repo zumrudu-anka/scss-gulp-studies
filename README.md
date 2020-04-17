@@ -1,2 +1,2 @@
-# SASS-SCSS
-SASS &amp; SCSS Studies
+# :sparkle: SCSS & Gulp :cup_with_straw:
+SCSS & Gulp Studies

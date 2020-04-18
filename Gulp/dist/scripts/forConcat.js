@@ -1,0 +1,1 @@
+var y=15,z=10;function funcInConcat(n,c){return n+c}funcInConcat(y,z);

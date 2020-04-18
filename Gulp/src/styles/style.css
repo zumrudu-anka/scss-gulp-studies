@@ -1,0 +1,19 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h1{
+    background-color: aqua;
+    color: red;
+    text-decoration: underline;
+}
+
+div a{
+    text-decoration: none;
+    border: 1px solid red;
+    border-radius: 25%;
+    box-shadow: 0 0 5px 5px red;
+}
